@@ -1,14 +1,58 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe");
+html, body {
+  height: calc(99% - 0.5em);
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  background-color: #604c5a;
+  text-align: center;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+#editor-container {
+  flex: 1 1 auto;
+  background-color: #e2c9db;
+  height: 100%;
+  padding: 5px;
+  margin: 5px;
+  min-width: 400px;
+  border-radius: 10px;
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+#editor-container #editor {
+  font-size: 1.2em;
+  box-sizing: border-box;
+  height: calc(100% - 5.2em);
+  width: 100%;
+  border: 0;
+  resize: none;
+}
+
+#preview-container {
+  flex: 1 1 auto;
+  background-color: #e2c9db;
+  height: 100%;
+  padding: 5px;
+  margin: 5px;
+  min-width: 400px;
+  border-radius: 10px;
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+#preview-container #preview {
+  background-color: white;
+  height: calc(100% - 5em);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  overflow: auto;
+  padding: 10px;
 }
